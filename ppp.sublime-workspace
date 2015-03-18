@@ -1,0 +1,1079 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"$$apply",
+				"$$applyAsyncId〔variable〕"
+			],
+			[
+				"$$",
+				"$$applyAsyncQueue〔variable〕"
+			],
+			[
+				"async",
+				"asyncEvaluatedTimes"
+			],
+			[
+				"$eval",
+				"$evalAsync	AngularJS"
+			],
+			[
+				"asyncEval",
+				"asyncEvaluatedTimes"
+			],
+			[
+				"asyncEvalu",
+				"asyncEvaluated"
+			],
+			[
+				"asyncE",
+				"asyncEvaluated"
+			],
+			[
+				"def",
+				"defaultHipchatToken	 Ɩ"
+			],
+			[
+				"defaulthipchat",
+				"defaultHipchatRoom	 Ɩ"
+			],
+			[
+				"defaulthipcha",
+				"defaultEnableHipChat	 Ɩ"
+			],
+			[
+				"default",
+				"defaultEnableStatsd	 Ɩ"
+			],
+			[
+				"hipchat",
+				"HipChatToken	string ν"
+			],
+			[
+				"ena",
+				"EnableMetrics	bool ν"
+			],
+			[
+				"Enal",
+				"EnableLogs	bool ν"
+			],
+			[
+				"enable",
+				"enableAppD	*bool ν"
+			],
+			[
+				"proje",
+				"projectPath"
+			],
+			[
+				"test",
+				"testFixturesPath"
+			],
+			[
+				"vendor",
+				"vendorFilesSrc"
+			],
+			[
+				"watch",
+				"watchExecutions〔variable〕"
+			],
+			[
+				"tohave",
+				"toHaveBeenCalled"
+			],
+			[
+				"listener",
+				"listenerFn〔variable〕"
+			],
+			[
+				"event",
+				"eventEmitter"
+			],
+			[
+				"sou",
+				"sourceControl"
+			],
+			[
+				"aggre",
+				"aggregatorName"
+			],
+			[
+				"genera",
+				"generators〔variable〕"
+			],
+			[
+				"super",
+				"superheroCtrl"
+			],
+			[
+				"ce",
+				"cellspacing	Attr"
+			],
+			[
+				"b",
+				"buildID	*string ν"
+			],
+			[
+				"resp",
+				"respDump	[]byte ν"
+			],
+			[
+				"stop",
+				"stoppedRegistries	[]string ν"
+			],
+			[
+				"enc",
+				"EncodeToString	string ƒ"
+			],
+			[
+				"hipc",
+				"sendMessageToHipChat	 ƒ"
+			],
+			[
+				"s",
+				"StatusCode	int ν"
+			],
+			[
+				"regis",
+				"registriesToStop	[]NibiruInstance ν"
+			],
+			[
+				"regi",
+				"registriesToStop	[]NibiruInstance ν"
+			],
+			[
+				"dnsEn",
+				"dnsEntry	string ν"
+			],
+			[
+				"dn",
+				"populateDNSRecords	 ƒ"
+			],
+			[
+				"Registr",
+				"registries	[]*Registry ν"
+			],
+			[
+				"known",
+				"knownThalassaRegistryInstances	[]*NibiruInstance ν"
+			],
+			[
+				"hipC",
+				"hipChatSender	 ν"
+			],
+			[
+				"hip",
+				"hipChatSender	 ν"
+			],
+			[
+				"l",
+				"AvailabilityZone	string ν"
+			],
+			[
+				"base",
+				"base64BearerToken	string ν"
+			],
+			[
+				"n",
+				"NibiruInstance	struct ʈ"
+			],
+			[
+				"ni",
+				"nibiru_auth_token	 ν"
+			],
+			[
+				"stat",
+				"StatusRoute	string ν"
+			],
+			[
+				"get",
+				"get_region_nodes	function"
+			],
+			[
+				"set",
+				"set_nibiru_instance_state	function"
+			],
+			[
+				"Has",
+				"HasSuffix	bool ƒ"
+			],
+			[
+				"NewDocumentFrom",
+				"NewDocumentFromResponse	*goquery.Document, error ƒ"
+			],
+			[
+				"verbo",
+				"verboseOutput	bool ν"
+			],
+			[
+				"str",
+				"Sort	 ƒ"
+			],
+			[
+				"w",
+				"WriteHeader	 ƒ"
+			],
+			[
+				"StatusNot",
+				"StatusNotFound	 Ɩ"
+			],
+			[
+				"wr",
+				"WriteJson	error ƒ"
+			],
+			[
+				"redis",
+				"redisServer	*string ν"
+			],
+			[
+				"r",
+				"ResetTimer	 ƒ"
+			],
+			[
+				"fat",
+				"Fatalf	 ƒ"
+			],
+			[
+				"Write",
+				"WriteAsJson	error ƒ"
+			],
+			[
+				"write",
+				"WriteAsJson	error ƒ"
+			],
+			[
+				"res",
+				"results	[]byte ν"
+			],
+			[
+				"status",
+				"StatusInternalServerError	 Ɩ"
+			],
+			[
+				"bad",
+				"StatusBadRequest	 Ɩ"
+			],
+			[
+				"add",
+				"Add"
+			],
+			[
+				"GOREST",
+				"GORESTFUL_DIR"
+			],
+			[
+				"Status",
+				"StatusBadRequest	 Ɩ"
+			],
+			[
+				"NewWid",
+				"NewWidgetResource	WidgetResource ƒ"
+			],
+			[
+				"Widget",
+				"WidgetResource	struct ʈ"
+			],
+			[
+				"Service",
+				"ServiceStopped	 Ɩ"
+			],
+			[
+				"serviceStatus",
+				"serviceStatus	ServiceStatus ν"
+			],
+			[
+				"uni",
+				"UnixNano	int64 ƒ"
+			],
+			[
+				"ServiceStopp",
+				"ServiceStopping	 Ɩ"
+			],
+			[
+				"servic",
+				"WebService	struct ʈ"
+			],
+			[
+				"func",
+				"func main	func main {...} ʂ"
+			],
+			[
+				"install",
+				"install-go-restful"
+			],
+			[
+				"GORE",
+				"GORESTFUL_OUT"
+			],
+			[
+				"GOR",
+				"GORESTFUL_DIR"
+			],
+			[
+				"assert",
+				"assert_equal"
+			],
+			[
+				"max",
+				"maxDiff"
+			],
+			[
+				"conduit",
+				"conduit_configs	statement"
+			],
+			[
+				"puts",
+				"_puts"
+			],
+			[
+				"tugboat",
+				"tugboat_context	module"
+			],
+			[
+				"put",
+				"_puts"
+			],
+			[
+				"first",
+				"first_mock_response	statement"
+			],
+			[
+				"second",
+				"second_mock_response	statement"
+			],
+			[
+				"d_prime",
+				"d_prime_prime	statement"
+			],
+			[
+				"cpr",
+				"c_prime_prime"
+			],
+			[
+				"c_pr",
+				"c_prime_prime	statement"
+			],
+			[
+				"b_prim",
+				"b_prime_prime"
+			],
+			[
+				"mock",
+				"mock_return_values	function"
+			],
+			[
+				"deploy",
+				"deployment_haproxy	import"
+			],
+			[
+				"return",
+				"return_value"
+			],
+			[
+				"ins",
+				"InsufficientConduitHostFoundError	class"
+			],
+			[
+				"Rais",
+				"raises"
+			],
+			[
+				"logging",
+				"logging_tools	module"
+			],
+			[
+				"conduit_hosts",
+				"conduit_hosts_instances	statement"
+			],
+			[
+				"con",
+				"conduit_cfg	statement"
+			],
+			[
+				"puppet",
+				"puppet_class_aqueduct	statement"
+			],
+			[
+				"proce",
+				"processed_resource_without_aqueduct	statement"
+			],
+			[
+				"_setup",
+				"_setup_network_find_with_expected_result	function"
+			],
+			[
+				"resource",
+				"resource_without_conduit	statement"
+			],
+			[
+				"process",
+				"processed_resource_without_conduit	statement"
+			],
+			[
+				"pupp",
+				"puppet_classes_no_conduit	statement"
+			],
+			[
+				"aque",
+				"aqueduct_configs	statement"
+			],
+			[
+				"completed",
+				"completed_hapy	statement"
+			],
+			[
+				"find",
+				"find_value	function"
+			],
+			[
+				"remove",
+				"_remove_puppet_class"
+			],
+			[
+				"dum",
+				"dumps	function"
+			],
+			[
+				"A",
+				"AqueductHostNotFoundError	class"
+			],
+			[
+				"e",
+				"Exit	 ƒ"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 10753,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/js/app.js",
+			"settings":
+			{
+				"buffer_size": 126,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/*\n Globals\n*/\n\nbody {\n  font-family: Georgia, \"Times New Roman\", Times, serif;\n  color: #555;\n}\n\nh1, .h1,\nh2, .h2,\nh3, .h3,\nh4, .h4,\nh5, .h5,\nh6, .h6 {\n  margin-top: 0;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-weight: normal;\n  color: #333;\n}\n\n\n/*\n * Override Bootstrap's default container.\n */\n\n@media (min-width: 1200px) {\n  .container {\n    width: 970px;\n  }\n}\n\n\n/*\n * Masthead\n */\n\n.ppp-masthead {\n  background-color: #5cb85c;\n  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);\n          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);\n}\n\n/* Nav links */\n.ppp-nav-item {\n  position: relative;\n  display: inline-block;\n  padding: 10px;\n  font-weight: 500;\n  color: #fff;\n}\n.ppp-nav-item:hover {\n  color: #000;\n  text-decoration: none;\n}\n.ppp-nav-item:focus {\n  color: #fff;\n  text-decoration: none;\n}\n\n/* Active state gets a caret at the bottom */\n.ppp-nav .active {\n  color: #fff;\n}\n.ppp-nav .active:after {\n  position: absolute;\n  bottom: 0;\n  left: 50%;\n  width: 0;\n  height: 0;\n  margin-left: -5px;\n  vertical-align: middle;\n  content: \" \";\n  border-right: 5px solid transparent;\n  border-bottom: 5px solid;\n  border-left: 5px solid transparent;\n}\n\n\n/*\n * ppp name and description\n */\n\n.ppp-header {\n  padding-top: 20px;\n  padding-bottom: 20px;\n}\n.ppp-title {\n  margin-top: 30px;\n  margin-bottom: 0;\n  font-size: 60px;\n  font-weight: normal;\n}\n.ppp-description {\n  font-size: 20px;\n  color: #999;\n}\n\n\n/*\n * Main column and sidebar layout\n */\n\n.ppp-main {\n  font-size: 18px;\n  line-height: 1.5;\n}\n\n/* Sidebar modules for boxing content */\n.sidebar-module {\n  padding: 15px;\n  margin: 0 -15px 15px;\n}\n.sidebar-module-inset {\n  padding: 15px;\n  background-color: #e9e9e9;\n  border-radius: 8px;\n}\n.sidebar-module-inset p:last-child,\n.sidebar-module-inset ul:last-child,\n.sidebar-module-inset ol:last-child {\n  margin-bottom: 0;\n}\n\n\n/* Pagination */\n.pager {\n  margin-bottom: 60px;\n  text-align: left;\n}\n.pager > li > a {\n  width: 140px;\n  padding: 10px 20px;\n  text-align: center;\n  border-radius: 30px;\n}\n\n\n/*\n * ppp content\n */\n\n.ppp-content {\n  margin-bottom: 60px;\n}\n.ppp-content-title {\n  margin-bottom: 5px;\n  font-size: 40px;\n}\n.ppp-content-meta {\n  margin-bottom: 20px;\n  color: #999;\n}\n.ppp-content-header {\n  font-size: 25px;\n}\n.ppp-content-underline {\n  text-decoration: underline;\n}\n\n\n/*\n * Footer\n */\n\n.ppp-footer {\n  padding: 10px 0;\n  color: #999;\n  text-align: center;\n  background-color: #f9f9f9;\n  border-top: 1px solid #e5e5e5;\n}\n.ppp-footer p:last-child {\n  margin-bottom: 0;\n}\n\n/**\n * Pins\n */\n\n\n.pin {\n  height: 40px;\n  width: 40px;\n  margin-top: 10px;\n  margin-right: 10px;\n  border-radius: 25px;\n}\n.pin:focus,\n.pin:active:focus,\n.pin.active:focus,\n.pin.focus,\n.pin:active.focus,\n.pin.active.focus {\n  outline: invert none medium;\n}\n.pin-word-end {\n  margin-right: 30px;\n}\n.pin-word {\n  white-space: nowrap;\n}\n.pin-placeholder {\n  height: 50px;\n  width: 50px;\n  border-radius: 25px;\n}\n.pin-punctuation {\n  font-size: 30px;\n}\n.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {\n  border-radius: 25px;\n}\n.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {\n  border-top-right-radius: 25px;\n  border-bottom-right-radius: 25px;\n}\n.btn-group > .btn:last-child:not(:first-child),\n.btn-group > .dropdown-toggle:not(:first-child) {\n  border-top-left-radius: 25px;\n  border-bottom-left-radius: 25px;\n}\n.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {\n  border-radius: 25px;\n}\n.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,\n.btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {\n  border-top-right-radius: 25px;\n  border-bottom-right-radius: 25px;\n}\n.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {\n  border-top-left-radius: 25px;\n  border-bottom-left-radius: 25px ;\n}",
+			"file": "app/css/style.css",
+			"file_size": 3845,
+			"file_write_time": 130707594420000000,
+			"settings":
+			{
+				"buffer_size": 3846,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/lib/css/bootstrap.css",
+			"settings":
+			{
+				"buffer_size": 141414,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"package controll",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"ls",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/englsa2/git/ppp",
+		"/Users/englsa2/git/ppp/app",
+		"/Users/englsa2/git/ppp/app/css",
+		"/Users/englsa2/git/ppp/app/img",
+		"/Users/englsa2/git/ppp/app/js",
+		"/Users/englsa2/git/ppp/app/lib",
+		"/Users/englsa2/git/ppp/app/lib/css",
+		"/usr/local/lib/node_modules/generator-eggs-genny",
+		"/Users/englsa2/git/eggs-genny",
+		"/Users/englsa2/git/eggs-genny/app"
+	],
+	"file_history":
+	[
+		"/Users/englsa2/Documents/ft/FTBInfinity/minecraft/config/cofh/Client.cfg",
+		"/Users/englsa2/Documents/ft/FTBInfinity/minecraft/config/cofh/core/client.cfg",
+		"/usr/local/lib/node_modules/generator-eggs-genny/app/index.js",
+		"/Users/englsa2/git/eggs-genny/app/index.js",
+		"/Users/englsa2/git/ppp/gulpfile.js",
+		"/Users/englsa2/git/ppp/npm-debug.log",
+		"/Users/englsa2/git/ppp/build/index.html",
+		"/Users/englsa2/git/ppp/ppp.sublime-project",
+		"/Users/englsa2/Documents/ft/FTBInfinity/minecraft/config/cofh/CoFHCore.cfg",
+		"/Users/englsa2/Library/Application Support/Sublime Text 3/Packages/TrailingSpaces/trailing_spaces.sublime-settings",
+		"/Users/englsa2/Library/Application Support/Sublime Text 3/Packages/User/trailing_spaces.sublime-settings",
+		"/Users/englsa2/git/build-your-own-angularjs/src/scope.js",
+		"/Users/englsa2/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/englsa2/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/englsa2/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/englsa2/git/generator-go-api-aggregator/raw/makefile",
+		"/Users/englsa2/git/angular-playground/app/10-examples-and-analysis/app.js",
+		"/Users/englsa2/git/angular-playground/app/10-examples-and-analysis/index.html",
+		"/Users/englsa2/go/src/github.com/scottengle/Thalassa-Conduit/makefile",
+		"/Users/englsa2/git/generator-go-api-aggregator/README.md",
+		"/Users/englsa2/git/generator-go-api-aggregator/app/templates/_Makefile",
+		"/Users/englsa2/dev/src/devops-tools.pearson.com/c4/default-aggregator/Makefile",
+		"/Users/englsa2/git/generator-go-api-aggregator/app/index.js",
+		"/Users/englsa2/git/build-your-own-angularjs/test/scope_spec.js",
+		"/Users/englsa2/git/build-your-own-angularjs/test/hello_spec.js",
+		"/Users/englsa2/git/generator-go-api-aggregator/app/templates/_main.go",
+		"/Users/englsa2/git/build-your-own-angularjs/src/hello.js",
+		"/Users/englsa2/git/build-your-own-angularjs/build-your-own-angularjs/package.json",
+		"/Users/englsa2/git/build-your-own-angularjs/package.json",
+		"/Users/englsa2/git/build-your-own-angularjs/node_modules/lodash/lodash.js",
+		"/Users/englsa2/makefile-merge/makefile",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/default-aggregator/Makefile",
+		"/Users/englsa2/git/angular-playground/app/8-templates/index.html",
+		"/Users/englsa2/git/angular-playground/app/8-templates/app.js",
+		"/Users/englsa2/git/angular-playground/app/8-templates/zippy.html",
+		"/Users/englsa2/makefile-merge/_Makefile",
+		"/Users/englsa2/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/usr/local/lib/node_modules/generator-go/app/index.js",
+		"/usr/local/lib/node_modules/generator-go/package.json",
+		"/Users/englsa2/git/generator-go-api-aggregator/app/templates/jshintrc",
+		"/Users/englsa2/git/generator-go-api-aggregator/app/templates/_package.json",
+		"/Users/englsa2/git/generator-go-api-aggregator/app/templates/editorconfig",
+		"/Users/englsa2/git/generator-go-api-aggregator/app/templates/_bower.json",
+		"/Users/englsa2/git/generator-go-api-aggregator/.editorconfig",
+		"/Users/englsa2/git/generator-go-api-aggregator/.jshintrc",
+		"/Users/englsa2/git/generator-go-api-aggregator/.travis.yml",
+		"/Users/englsa2/git/generator-go-api-aggregator/.yo-rc.json",
+		"/Users/englsa2/git/generator-apiaggregator-go/app/index.js",
+		"/Users/englsa2/git/angular-playground/app/7-Elements/app.js",
+		"/Users/englsa2/git/angular-playground/app/0-template/app.js",
+		"/Users/englsa2/git/angular-playground/app/0-template/index.html",
+		"/Users/englsa2/Library/Application Support/Sublime Text 3/Packages/AngularJS/AngularJS-sublime-package.sublime-settings",
+		"/Users/englsa2/Desktop/Shopping List.txt",
+		"/Users/englsa2/Desktop/Review feedback.txt",
+		"/Users/englsa2/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/Users/englsa2/git/generator-test/package.json",
+		"/Users/englsa2/git/generator-test/generators/app/index.js",
+		"/Users/englsa2/go/src/code.google.com/p/go.tools/cmd/present/appengine.go",
+		"/Users/englsa2/git/generator-test/node_modules/yeoman-generator/node_modules/inquirer/node_modules/through/test/auto-destroy.js",
+		"/Users/englsa2/git/generator-test/node_modules/yeoman-generator/node_modules/iconv-lite/encodings/tables/big5-added.json",
+		"/Users/englsa2/go/src/code.google.com/p/go.tools/cmd/present/static/jquery-ui.js",
+		"/Users/englsa2/git/generator-test/node_modules/yeoman-generator/jsdoc.json",
+		"/Users/englsa2/git/generator-test/node_modules/yeoman-generator/node_modules/download/node_modules/fs-extra/node_modules/jsonfile/lib/jsonfile.js",
+		"/Users/englsa2/git/generator-test/node_modules/yeoman-generator/node_modules/request/node_modules/json-stringify-safe/README.md",
+		"/Users/englsa2/git/generator-test/node_modules/yeoman-generator/node_modules/debug/node.js",
+		"/Users/englsa2/git/generator-test/node_modules/yeoman-generator/node_modules/inquirer/node_modules/cli-color/node_modules/es5-ext/object/normalize-options.js",
+		"/Users/englsa2/git/generator-test/node_modules/yeoman-generator/node_modules/.bin/nopt",
+		"/Users/englsa2/go/src/code.google.com/p/go.tools/cmd/present/templates/slides.tmpl",
+		"/Users/englsa2/go/src/github.com/quick/golang.slide",
+		"/Users/englsa2/git/angular-playground/app/components-and-containers/app.js",
+		"/Users/englsa2/git/angular-playground/app/components-and-containers/index.html",
+		"/Users/englsa2/git/angular-playground/app/transclusion-basics/index.html",
+		"/Users/englsa2/git/angular-playground/app/transclusion-basics/app.js",
+		"/Users/englsa2/git/angular-playground/app/isolate-scope/index.html",
+		"/Users/englsa2/git/angular-playground/app/app.css",
+		"/Users/englsa2/git/angular-playground/app/isolate-scope/app.js",
+		"/Users/englsa2/git/angular-playground/app/app.js",
+		"/Users/englsa2/git/angular-playground/index.html",
+		"/Users/englsa2/git/angular-playground/app/index-bak.html",
+		"/Users/englsa2/git/nibiru/api/nibiru/settings.py",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-alerting/thalassa_alerter.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-repair-tool/alerting/hipchat.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-repair-tool/nibiru_instance.go",
+		"/Users/englsa2/git/thalassa-monitoring/fabfile/__init__.py",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-repair-tool/thalassa_repair_tool.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-auto-recover/makefile",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-repair-tool/nibiru_dns_record.go",
+		"/Users/englsa2/go/src/github.com/scottengle/go-web-crawler/gowc.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-auto-recover/registry.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-auto-recover/alerting/hipchat.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-auto-recover/nibiru_instances.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-auto-recover/nibiru_instance.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-repair-tool/alerting/basic_incident_reporter.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-repair-tool/alerting/pagerduty.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-repair-tool/thalassa_repair_tool",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-repair-tool/thalassa-repair-tool",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-repair-tool/makefile",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-auto-recover/thalassa_repair_tool.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-repair-tool/thalassa-auto-recover",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-auto-recover/instance.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-auto-recover/thalassa_auto_recover.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-auto-recover/http_response.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-auto-recover/alerting/registry.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/thalassa-auto-recover/.gitignore",
+		"/Users/englsa2/go/src/github.com/scottengle/go-web-crawler/README.md",
+		"/Users/englsa2/go/src/github.com/scottengle/go-web-crawler/requirements.txt",
+		"/Users/englsa2/go/src/github.com/scottengle/go-web-crawler/page-request.go",
+		"/Users/englsa2/go/src/github.com/scottengle/go-web-crawler/link.go",
+		"/Users/englsa2/go/src/github.com/scottengle/presentations/go_web_crawler/wc2.slide",
+		"/Users/englsa2/go/src/github.com/scottengle/presentations/go_web_crawler/wc.slide",
+		"/Users/englsa2/go/src/github.com/scottengle/go-web-crawler/logger.go",
+		"/Users/englsa2/go/src/github.com/scottengle/go-web-crawler/db.go",
+		"/Users/englsa2/go/src/github.com/scottengle/go-web-crawler/dispatcher.go",
+		"/Users/englsa2/go/src/github.com/scottengle/go-web-crawler/reports.go",
+		"/Users/englsa2/go/src/github.com/scottengle/go-web-crawler/indexer.go",
+		"/Users/englsa2/go/src/github.com/scottengle/go-web-crawler/post_db.bin",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/rankings.md",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/go-json-rest/app.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/go-restful/app.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/goji/app.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/go-json-rest/app_test.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/go-restful/app_test.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/goji/app_test.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/negroni/app.go",
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/negroni/app_test.go",
+		"/Users/englsa2/Desktop/Benchmarking Go Web Toolkits",
+		"/Users/englsa2/Library/Application Support/Sublime Text 3/Packages/GoSublime/GoSublime.sublime-settings",
+		"/Users/englsa2/Library/Application Support/Sublime Text 3/Packages/GoSublime/CHANGELOG.md"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<project>",
+			"/Users/englsa2/git/conduit/tugboat",
+			"<project>",
+			"/Users/englsa2/git/conduit/tugboat/src",
+			"/Users/englsa2/git/conduit/tugboat"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"btn-group > .btn:first",
+			"btn-group btn",
+			"btn-group > btn:first",
+			"font",
+			"btn-",
+			"button",
+			"button-",
+			"corner",
+			"button",
+			"u ",
+			"ul ",
+			"ul",
+			"col-sm",
+			"col",
+			"blog",
+			"source",
+			"proxy",
+			"super+f",
+			"super+alt+d",
+			"super+alt+c",
+			"super+alt+v",
+			"super+h",
+			"super+g",
+			"super+y",
+			"+t",
+			"<",
+			"log",
+			"getconfig",
+			"config",
+			"GOBIN",
+			"TARG",
+			"myrepo",
+			"my",
+			"parseSections",
+			"parse",
+			"title",
+			"font",
+			"!import",
+			"\\\"",
+			"hipchat",
+			"readall",
+			"hipChat",
+			"hipchat",
+			"look_for_missing_coverage",
+			"determine_regions_per_environment",
+			"get_region_nodes",
+			"read_region_nodes",
+			"update_region_nodes",
+			"get_region_nodes",
+			"location",
+			"halresource",
+			"'",
+			"u'",
+			"asy",
+			"asyn",
+			"async",
+			"delete",
+			"update_thalassa_cname",
+			"existing link",
+			"parent",
+			"\\s+\\|\\s+",
+			",\\s",
+			"\\s{2,}",
+			"\\s+",
+			"\\t",
+			"\\s*\\|\\s",
+			"framework",
+			"jsonresult",
+			"name:",
+			"\n	",
+			".update",
+			"update",
+			"SERVICENOW_ENVIRONMENTS",
+			"SERVICENOW_CHANGE_DEFAULTS",
+			"get_servicenow_client",
+			"deployment.service_now",
+			"find",
+			"process",
+			"find",
+			"from tugboat.deployment.infrastructure.tasks import haproxy",
+			"tugboat_context",
+			"dev",
+			"options:",
+			"options: ",
+			"options:",
+			"options: ",
+			"version",
+			"app_version",
+			"aq.",
+			"(aq)",
+			"aqueduct",
+			"Aqueduct",
+			"aqueduct",
+			"\"",
+			"server",
+			"app.update_backends",
+			"raises",
+			"puppet_classes_no_aqueduct",
+			"puts",
+			"json",
+			"deepcopy",
+			"puts",
+			"def ",
+			"_async",
+			"async",
+			"instance.",
+			"pep8",
+			"80",
+			"async",
+			"dump",
+			"json",
+			"get_self_link",
+			"AqueductHostNotFoundError",
+			"find",
+			"def find",
+			"def fine",
+			"ruler",
+			"line",
+			"todo",
+			"error",
+			"select",
+			"port",
+			"todo",
+			"tabs",
+			"indent",
+			"thalassa",
+			"aqueduct",
+			"prsn_thalassa"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ppp",
+			"\"",
+			"'",
+			"\\t",
+			" \\t",
+			" ",
+			", ",
+			"\\t",
+			"cndt.",
+			"(cndt)",
+			"conduit",
+			"Conduit",
+			"conduit",
+			"'",
+			"conduit",
+			"prsn_conduit",
+			"Conduit",
+			"conduit_host",
+			"cndt",
+			"conduit",
+			"\"",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10753,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7234,
+								7234
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2372.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3843,
+								3843
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3267.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/lib/css/bootstrap.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 141414,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								68379,
+								69307
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 60595.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "ppp.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 214.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

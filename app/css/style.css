@@ -1,0 +1,252 @@
+/*
+ Globals
+*/
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+/*
+ * Masthead
+ */
+
+.ppp-masthead {
+  background-color: #5cb85c;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+/* Nav links */
+.ppp-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #fff;
+}
+.ppp-nav-item:hover {
+  color: #000;
+  text-decoration: none;
+}
+.ppp-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.ppp-nav .active {
+  color: #fff;
+}
+.ppp-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+ * ppp name and description
+ */
+
+.ppp-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.ppp-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.ppp-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.ppp-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #e9e9e9;
+  border-radius: 8px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * ppp content
+ */
+
+.ppp-content {
+  margin-bottom: 60px;
+}
+.ppp-content-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.ppp-content-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+.ppp-content-header {
+  font-size: 25px;
+}
+.ppp-content-underline {
+  text-decoration: underline;
+}
+
+
+/*
+ * Footer
+ */
+
+.ppp-footer {
+  padding: 10px 0;
+  color: #777;
+  text-align: center;
+  background-color: #e9e9e9;
+  border-top: 1px solid #e5e5e5;
+}
+.ppp-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * Pins
+ */
+
+
+.pin {
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 25px;
+}
+.pin-punctuation.disabled{
+  border-color: #999;
+  background-color: #EEE;
+}
+
+.pin:focus,
+.pin:active:focus,
+.pin.active:focus,
+.pin.focus,
+.pin:active.focus,
+.pin.active.focus {
+  outline: invert none medium;
+}
+.pin-word-end {
+  margin-right: 50px;
+}
+.pin-word {
+  white-space: nowrap;
+}
+.pin-placeholder {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  border-color: #AAA;
+}
+.pin-pool {
+  display: inline-block;
+}
+
+.pin-letter,
+.drag-container-active {
+  background-image: url(/app/img/woodgrain.png);
+  font-size: 15px;
+  font-weight: bold;
+  z-index: 5;
+}
+
+.pin-punctuation {
+  font-size: 30px;
+}
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  border-radius: 25px;
+}
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .dropdown-toggle:not(:first-child) {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+  border-radius: 25px;
+}
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px ;
+}

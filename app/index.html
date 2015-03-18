@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html ng-app="ppp" lang="">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Lots O'Letters Puzzle™</title>
+	<meta name="application-name" content="ppp" />
+	<meta name="description" content="Push Pin Puzzle™ Demo App">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<!-- Apple icons (for iOS web apps: http://bit.ly/18X1vXA) -->
+	<link rel="apple-touch-icon" href="img/icons/apple-touch-icon-76x76.png" /><!-- iOS <= 4 don't accept 'sizes' -->
+  <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png" /><!-- 1x non-Retina Displays -->
+  <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png" /><!-- 2x Retina Displays-->
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png" /><!-- iPads with 2x Retina Display-->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon-180x180.png" /><!-- iPhone 6 Plus with 3x Retina Display-->
+	<link rel="icon" sizes="192x192" href="img/icons/touch-icon-192x192.png"><!-- For Chrome for Android -->
+
+	<!-- Windows Tile icons: http://bit.ly/1AknLat -->
+	<meta name="msapplication-TileColor" content="#f1f1f1"/>
+	<meta name="msapplication-TileImage" content="img/icons/tile-icon.png">
+
+	<!-- iOS Safari Status Bar-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!--Fullscreen mobile apps --><!--
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- iOS: Mobile Safari--><!--
+	<meta name="mobile-web-app-capable" content="yes"><!-- Android: Chrome -->
+
+<!-- build:css -->
+	<link href="lib/css/bootstrap.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"	/>
+<!-- endbuild -->
+
+</head>
+<body ng-controller="PuzzleController">
+
+	<div class="ppp-masthead">
+	  <div class="container">
+	    <nav class="ppp-nav">
+	      <a class="ppp-nav-item active" href="#">Demo</a>
+	      <a class="ppp-nav-item" href="#">About</a>
+	      <a class="ppp-nav-item" href="#">Etsy</a>
+	      <a class="ppp-nav-item" href="#">Pinterest</a>
+				<a class="ppp-nav-item" href="#">Facebook</a>
+				<a class="ppp-nav-item" href="#">Twitter</a>
+	    </nav>
+	  </div>
+	</div>
+
+	<div class="container">
+
+		<div class="ppp-header">
+			<h1 class="ppp-title">Lots O'Letters™</h1>
+			<h1 class="ppp-content-title">By DonnaDiddit</h1>
+			<p class="lead ppp-description">Can you resist solving this?</p>
+		</div>
+
+		<div class="row">
+
+			<div class="col-sm-8 ppp-main">
+				<div class="ppp-content">
+
+					<button type="button" class="btn btn-info">Check My Answer</button>&nbsp;
+					<button type="button" class="btn btn-warning">Give Me A Hint</button>&nbsp;
+					<button type="button" class="btn btn-danger">Reset Puzzle</button>
+
+					<br/><br/>
+
+					<ppp-hint></ppp-hint>
+
+					<hr>
+
+					<div class="pin-pool" ng-repeat="letter in puzzle.shuffledLetters track by $index">
+						<ppp-letter>{{letter}}</ppp-letter>
+					</div>
+
+        </div>
+      </div>
+
+      <div class="col-sm-3 col-sm-offset-1 ppp-sidebar">
+				<div class="sidebar-module sidebar-module-inset">
+					<h4 class="ppp-content-underline"><em>About This Puzzle</em></h4>
+						<div>
+							<p><em>Quote By:</em><br/>{{puzzle.quoteBy}}</p>
+							<p><em>Source:</em><br/>{{puzzle.source}}</p>
+							<p><em>Words:</em> {{puzzle.words().length}}</p>
+							<p><em>Letters:</em> {{puzzle.letters().length}}</p>
+							<p><em>Difficulty:</em> {{puzzle.difficulty()}}</p>
+							<p><a ng-href={{puzzle.purchaseLink}}>Buy This Puzzle</a></p>
+						</div>
+				</div>
+
+				<div class="sidebar-module">
+					<h4 class="ppp-content-underline">Objective</h4>
+					<p>Solve the puzzle by assembling the quote from available letters.</p>
+					<br/>
+					<h4 class="ppp-content-underline">Instructions</h4>
+	        <p>Place pins by dragging the letters below the puzzle and dropping them onto the puzzle placeholders.</p>
+          <p>Press "Check My Answer" to see how many pins are in the correct position. Correctly placed pins will be outlined in green.</p>
+          <p>Press "Give Me A Hint" to place one unplaced pin into the correct position.</p>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="ppp-footer">Copyright © DonnaDiddit, LLC 2015. All rights reserved.</div>
+<!-- build:js -->
+	<script type="text/javascript" src="lib/js/jquery.js"></script>
+ 	<script type="text/javascript" src="lib/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="lib/js/angular.js"></script>
+	<script type="text/javascript" src="lib/js/angular-dragdrop.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>
