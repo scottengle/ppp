@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"puzz",
+				"puzzleData"
+			],
+			[
+				"unpla",
+				"unplacedPins"
+			],
+			[
+				"pla",
+				"placePin"
+			],
+			[
+				"place",
+				"placeholder"
+			],
+			[
+				"corre",
+				"correctValue〔variable〕"
+			],
+			[
+				"le",
+				"letters"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"shuff",
+				"shuffledLetters"
+			],
+			[
+				"fil",
+				"filter: uppercase	AngularJS"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
 				"$$apply",
 				"$$applyAsyncId〔variable〕"
 			],
@@ -448,37 +488,42 @@
 	"buffers":
 	[
 		{
-			"file": "app/index.html",
-			"settings":
-			{
-				"buffer_size": 10753,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/js/app.js",
 			"settings":
 			{
-				"buffer_size": 126,
+				"buffer_size": 26750,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "/*\n Globals\n*/\n\nbody {\n  font-family: Georgia, \"Times New Roman\", Times, serif;\n  color: #555;\n}\n\nh1, .h1,\nh2, .h2,\nh3, .h3,\nh4, .h4,\nh5, .h5,\nh6, .h6 {\n  margin-top: 0;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-weight: normal;\n  color: #333;\n}\n\n\n/*\n * Override Bootstrap's default container.\n */\n\n@media (min-width: 1200px) {\n  .container {\n    width: 970px;\n  }\n}\n\n\n/*\n * Masthead\n */\n\n.ppp-masthead {\n  background-color: #5cb85c;\n  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);\n          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);\n}\n\n/* Nav links */\n.ppp-nav-item {\n  position: relative;\n  display: inline-block;\n  padding: 10px;\n  font-weight: 500;\n  color: #fff;\n}\n.ppp-nav-item:hover {\n  color: #000;\n  text-decoration: none;\n}\n.ppp-nav-item:focus {\n  color: #fff;\n  text-decoration: none;\n}\n\n/* Active state gets a caret at the bottom */\n.ppp-nav .active {\n  color: #fff;\n}\n.ppp-nav .active:after {\n  position: absolute;\n  bottom: 0;\n  left: 50%;\n  width: 0;\n  height: 0;\n  margin-left: -5px;\n  vertical-align: middle;\n  content: \" \";\n  border-right: 5px solid transparent;\n  border-bottom: 5px solid;\n  border-left: 5px solid transparent;\n}\n\n\n/*\n * ppp name and description\n */\n\n.ppp-header {\n  padding-top: 20px;\n  padding-bottom: 20px;\n}\n.ppp-title {\n  margin-top: 30px;\n  margin-bottom: 0;\n  font-size: 60px;\n  font-weight: normal;\n}\n.ppp-description {\n  font-size: 20px;\n  color: #999;\n}\n\n\n/*\n * Main column and sidebar layout\n */\n\n.ppp-main {\n  font-size: 18px;\n  line-height: 1.5;\n}\n\n/* Sidebar modules for boxing content */\n.sidebar-module {\n  padding: 15px;\n  margin: 0 -15px 15px;\n}\n.sidebar-module-inset {\n  padding: 15px;\n  background-color: #e9e9e9;\n  border-radius: 8px;\n}\n.sidebar-module-inset p:last-child,\n.sidebar-module-inset ul:last-child,\n.sidebar-module-inset ol:last-child {\n  margin-bottom: 0;\n}\n\n\n/* Pagination */\n.pager {\n  margin-bottom: 60px;\n  text-align: left;\n}\n.pager > li > a {\n  width: 140px;\n  padding: 10px 20px;\n  text-align: center;\n  border-radius: 30px;\n}\n\n\n/*\n * ppp content\n */\n\n.ppp-content {\n  margin-bottom: 60px;\n}\n.ppp-content-title {\n  margin-bottom: 5px;\n  font-size: 40px;\n}\n.ppp-content-meta {\n  margin-bottom: 20px;\n  color: #999;\n}\n.ppp-content-header {\n  font-size: 25px;\n}\n.ppp-content-underline {\n  text-decoration: underline;\n}\n\n\n/*\n * Footer\n */\n\n.ppp-footer {\n  padding: 10px 0;\n  color: #999;\n  text-align: center;\n  background-color: #f9f9f9;\n  border-top: 1px solid #e5e5e5;\n}\n.ppp-footer p:last-child {\n  margin-bottom: 0;\n}\n\n/**\n * Pins\n */\n\n\n.pin {\n  height: 40px;\n  width: 40px;\n  margin-top: 10px;\n  margin-right: 10px;\n  border-radius: 25px;\n}\n.pin:focus,\n.pin:active:focus,\n.pin.active:focus,\n.pin.focus,\n.pin:active.focus,\n.pin.active.focus {\n  outline: invert none medium;\n}\n.pin-word-end {\n  margin-right: 30px;\n}\n.pin-word {\n  white-space: nowrap;\n}\n.pin-placeholder {\n  height: 50px;\n  width: 50px;\n  border-radius: 25px;\n}\n.pin-punctuation {\n  font-size: 30px;\n}\n.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {\n  border-radius: 25px;\n}\n.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {\n  border-top-right-radius: 25px;\n  border-bottom-right-radius: 25px;\n}\n.btn-group > .btn:last-child:not(:first-child),\n.btn-group > .dropdown-toggle:not(:first-child) {\n  border-top-left-radius: 25px;\n  border-bottom-left-radius: 25px;\n}\n.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {\n  border-radius: 25px;\n}\n.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,\n.btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {\n  border-top-right-radius: 25px;\n  border-bottom-right-radius: 25px;\n}\n.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {\n  border-top-left-radius: 25px;\n  border-bottom-left-radius: 25px ;\n}",
+			"file": "app/js/hintLetterTemplate.html",
+			"settings":
+			{
+				"buffer_size": 241,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/js/letterTemplate.html",
+			"settings":
+			{
+				"buffer_size": 229,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 6997,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "app/css/style.css",
-			"file_size": 3845,
-			"file_write_time": 130707594420000000,
 			"settings":
 			{
-				"buffer_size": 3846,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/lib/css/bootstrap.css",
-			"settings":
-			{
-				"buffer_size": 141414,
+				"buffer_size": 4869,
 				"line_ending": "Unix"
 			}
 		}
@@ -551,12 +596,16 @@
 		"/Users/englsa2/git/ppp/app/js",
 		"/Users/englsa2/git/ppp/app/lib",
 		"/Users/englsa2/git/ppp/app/lib/css",
-		"/usr/local/lib/node_modules/generator-eggs-genny",
-		"/Users/englsa2/git/eggs-genny",
-		"/Users/englsa2/git/eggs-genny/app"
+		"/Users/englsa2/git/ppp/app/lib/js"
 	],
 	"file_history":
 	[
+		"/Users/englsa2/git/ppp/app/lib/js/angular-timer.min.js",
+		"/Users/englsa2/git/ppp/app/lib/js/humanize-duration.js",
+		"/Users/englsa2/git/ppp/app/lib/js/moment-with-locales.min.js",
+		"/Users/englsa2/git/ppp/app/lib/js/angular-drag-drop.js",
+		"/Users/englsa2/git/ppp/app/lib/js/angular-dragdrop.min.js",
+		"/Users/englsa2/git/ppp/app/index.html",
 		"/Users/englsa2/Documents/ft/FTBInfinity/minecraft/config/cofh/Client.cfg",
 		"/Users/englsa2/Documents/ft/FTBInfinity/minecraft/config/cofh/core/client.cfg",
 		"/usr/local/lib/node_modules/generator-eggs-genny/app/index.js",
@@ -678,13 +727,7 @@
 		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/go-restful/app.go",
 		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/goji/app.go",
 		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/go-json-rest/app_test.go",
-		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/go-restful/app_test.go",
-		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/goji/app_test.go",
-		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/negroni/app.go",
-		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/negroni/app_test.go",
-		"/Users/englsa2/Desktop/Benchmarking Go Web Toolkits",
-		"/Users/englsa2/Library/Application Support/Sublime Text 3/Packages/GoSublime/GoSublime.sublime-settings",
-		"/Users/englsa2/Library/Application Support/Sublime Text 3/Packages/GoSublime/CHANGELOG.md"
+		"/Users/englsa2/go/src/devops-tools.pearson.com/c4/web-framework-spike/go-restful/app_test.go"
 	],
 	"find":
 	{
@@ -707,6 +750,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			". ",
+			".",
+			". ",
+			"Common Phrase ",
+			",,",
+			"'\\},",
+			"\\\\'",
+			"\\'",
+			"', '",
+			": '",
+			"':",
+			"\\{'",
+			"\\}",
+			"'",
+			"ppp-hint",
+			"ppp-sidebar",
+			"timer",
+			"Angular",
 			"btn-group > .btn:first",
 			"btn-group btn",
 			"btn-group > btn:first",
@@ -816,25 +877,7 @@
 			"pep8",
 			"80",
 			"async",
-			"dump",
-			"json",
-			"get_self_link",
-			"AqueductHostNotFoundError",
-			"find",
-			"def find",
-			"def fine",
-			"ruler",
-			"line",
-			"todo",
-			"error",
-			"select",
-			"port",
-			"todo",
-			"tabs",
-			"indent",
-			"thalassa",
-			"aqueduct",
-			"prsn_thalassa"
+			"dump"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -842,6 +885,17 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Common Phrase #",
+			",",
+			"\"},",
+			"'",
+			"\", \"",
+			": \"",
+			"\":",
+			"{\"",
+			"},",
+			"}/n",
+			"\"",
 			"ppp",
 			"\"",
 			"'",
@@ -874,24 +928,113 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/index.html",
+					"file": "app/js/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10753,
+						"buffer_size": 26750,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7234,
-								7234
+								19029,
+								19029
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Better JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 13940.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/js/hintLetterTemplate.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								215,
+								215
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/js/letterTemplate.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6997,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3606,
+								3606
 							]
 						],
 						"settings":
@@ -901,55 +1044,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2372.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/js/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 126,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 950.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "app/css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3846,
+						"buffer_size": 4869,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3843,
-								3843
+								2493,
+								2493
 							]
 						],
 						"settings":
@@ -959,37 +1074,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3267.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/lib/css/bootstrap.css",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 141414,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								68379,
-								69307
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 60595.0,
+						"translation.y": 2202.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

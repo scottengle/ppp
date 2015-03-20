@@ -66,18 +66,33 @@
 			<div class="col-sm-8 ppp-main">
 				<div class="ppp-content">
 
-					<button type="button" class="btn btn-info">Check My Answer</button>&nbsp;
-					<button type="button" class="btn btn-warning">Give Me A Hint</button>&nbsp;
-					<button type="button" class="btn btn-danger">Reset Puzzle</button>
+					<select ng-model="selectedPuzzle" ng-change="onPuzzleChange()" ng-options="puzzle as puzzle.name group by puzzle.difficulty for puzzle in mergedPuzzleData">
+						<option value="">Choose A Different Puzzle</option>
+					</select>
 
 					<br/><br/>
 
-					<ppp-hint></ppp-hint>
+					<button type="button" class="btn btn-info ppp-button" ng-click="checkAnswer()">Check My Answer</button>&nbsp;
+					<button type="button" class="btn btn-warning ppp-button" ng-click="giveHint()">Give Me A Hint</button>&nbsp;
+					<button type="button" class="btn btn-danger ppp-button" ng-click="resetPuzzle()">Reset Puzzle</button><br/>
+					<button type="button" class="btn btn-default disabled ppp-button">Pins Correct: {{puzzle.correct}} / {{puzzle.letters.length}}</button>
 
-					<hr>
+					<ppp-hint>
+						<ppp-quotation-mark></ppp-quotation-mark>
+							<div class="pin-hint-word" ng-repeat="word in puzzle.words track by $index">
+								<ppp-hint-word index="{{$index}}">
+									<div class="pin-hint-letter" ng-repeat="letter in word track by $index">
+										<ppp-hint-letter ng-cloak>{{letter}}</ppp-hint-letter>
+									</div>
+								</ppp-hint-word>
+							</div>
+						<ppp-quotation-mark></ppp-quotation-mark>
+					</ppp-hint>
 
-					<div class="pin-pool" ng-repeat="letter in puzzle.shuffledLetters track by $index">
-						<ppp-letter>{{letter}}</ppp-letter>
+					<div data-drop="true" jqyoui-droppable class="pin-pool-area">
+						<div class="pin-pool" ng-repeat="letter in puzzle.shuffledLetters track by $index">
+							<ppp-letter ng-cloak>{{letter}}</ppp-letter>
+						</div>
 					</div>
 
         </div>
@@ -85,25 +100,33 @@
 
       <div class="col-sm-3 col-sm-offset-1 ppp-sidebar">
 				<div class="sidebar-module sidebar-module-inset">
-					<h4 class="ppp-content-underline"><em>About This Puzzle</em></h4>
+					<h4 class="ppp-content-underline ppp-content-centered">About This Puzzle</h4>
 						<div>
 							<p><em>Quote By:</em><br/>{{puzzle.quoteBy}}</p>
 							<p><em>Source:</em><br/>{{puzzle.source}}</p>
-							<p><em>Words:</em> {{puzzle.words().length}}</p>
-							<p><em>Letters:</em> {{puzzle.letters().length}}</p>
-							<p><em>Difficulty:</em> {{puzzle.difficulty()}}</p>
+							<p><em>Words:</em> {{puzzle.words.length}}</p>
+							<p><em>Letters:</em> {{puzzle.letters.length}}</p>
+							<p><em>Difficulty:</em> {{puzzle.difficulty}}</p>
 							<p><a ng-href={{puzzle.purchaseLink}}>Buy This Puzzle</a></p>
 						</div>
 				</div>
 
-				<div class="sidebar-module">
-					<h4 class="ppp-content-underline">Objective</h4>
+				<div class="sidebar-module sidebar-module-inset-alt">
+					<h4 class="ppp-content-underline ppp-content-centered">Timer</h4>
+					<div class="timer-panel"><timer autostart="false" interval="1000" class="timer">{{minutes}} Minute{{minutesS}} {{seconds}} Second{{secondsS}}</timer><br/>
+					<button type="button" class="btn btn-default" ng-click="startTimer()" ng-disabled="timerStarted">Start</button> <button type="button" class="btn btn-default" ng-click="resumeTimer()" ng-disabled="!timerStarted || timerRunning">Resume</button> <button type="button" id="timerOff" class="btn btn-default" ng-click="stopTimer()" ng-disabled="!timerStarted && !timerRunning">Stop</button>
+					</div>
+				</div>
+
+				<div class="sidebar-module sidebar-module-inset-alt">
+					<h4 class="ppp-content-underline ppp-content-centered">Objective</h4>
 					<p>Solve the puzzle by assembling the quote from available letters.</p>
 					<br/>
-					<h4 class="ppp-content-underline">Instructions</h4>
-	        <p>Place pins by dragging the letters below the puzzle and dropping them onto the puzzle placeholders.</p>
+					<h4 class="ppp-content-underline ppp-content-centered">Instructions</h4>
+	        <p>Place pins by dragging and dropping the letters onto the puzzle placeholders.</p>
           <p>Press "Check My Answer" to see how many pins are in the correct position. Correctly placed pins will be outlined in green.</p>
-          <p>Press "Give Me A Hint" to place one unplaced pin into the correct position.</p>
+          <p>Press "Give Me A Hint" to place one unplaced pin into the correct position. This will also move incorrectly placed pins back to their starting positions.</p>
+          <p>Press "Reset Puzzle" to reload the puzzle and start over.</p>
 				</div>
 
 			</div>
@@ -118,6 +141,9 @@
  	<script type="text/javascript" src="lib/js/jquery-ui.js"></script>
 	<script type="text/javascript" src="lib/js/angular.js"></script>
 	<script type="text/javascript" src="lib/js/angular-dragdrop.min.js"></script>
+	<script type="text/javascript" src="lib/js/moment-with-locales.min.js"></script>
+	<script type="text/javascript" src="lib/js/humanize-duration.js"></script>
+	<script type="text/javascript" src="lib/js/angular-timer.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 <!-- endbuild -->
 
