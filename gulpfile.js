@@ -16,7 +16,7 @@ var gulp    = require('gulp'),
     del     = require('del'),
     dirlist = require('dirlist'),
     loggit  = require('loggit'),
-    time    = require('./node_modules/timestamp/timestamp.js'),
+    time    = require('./node_modules/timestamp/index.js'),
     glob    = require('glob'),
     plug    = require('gulp-load-plugins')({
                 scope: ['devDependencies'],
@@ -45,7 +45,7 @@ gulp.task( 'reload-me', function(){
 
   plug.livereload.listen();
   gulp.watch( ['app/css/*.css', 'app/js/*.js', 'app/index.html', 'app/partials/*.html' ], function(){
-    loggit("I've reloaded your page, sir!\n    "+time.timePlz(), 'yellow', '+' );
+    loggit("I've reloaded your page, sir!\n    "+time(), 'yellow', '+' );
   })
   .on('change', plug.livereload.changed);
 });

@@ -1,2 +1,4 @@
 .bowerrc
+.settings/
 node_modules/
+bower_components/
