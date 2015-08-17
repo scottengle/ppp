@@ -1,4 +1,4 @@
-angular.module('ppp', ['ngDragDrop', 'timer'])
+angular.module('ppp')
 .controller('PuzzleController', ['$scope', '$timeout', function ($scope, $timeout) {
 
   $scope.puzzleData = {};

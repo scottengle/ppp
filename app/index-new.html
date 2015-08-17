@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html ng-app="ppp" lang="">
+	<head>
+		<title>Lots O'Letters Puzzle™</title>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+		<meta name="application-name" content="ppp" />
+		<meta name="description" content="Push Pin Puzzle™ Demo App">
+		<meta name="keywords" content="">
+		<meta name="author" content="">	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	
+		<!-- Apple icons (for iOS web apps: http://bit.ly/18X1vXA) -->
+		<link rel="apple-touch-icon" href="img/icons/apple-touch-icon-76x76.png" /><!-- iOS <= 4 don't accept 'sizes' -->
+		<link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png" /><!-- 1x non-Retina Displays -->
+		<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png" /><!-- 2x Retina Displays-->
+		<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png" /><!-- iPads with 2x Retina Display-->
+		<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon-180x180.png" /><!-- iPhone 6 Plus with 3x Retina Display-->
+		<link rel="icon" sizes="192x192" href="img/icons/touch-icon-192x192.png"><!-- For Chrome for Android -->
+		
+		<!-- Windows Tile icons: http://bit.ly/1AknLat -->
+		<meta name="msapplication-TileColor" content="#f1f1f1"/>
+		<meta name="msapplication-TileImage" content="img/icons/tile-icon.png">
+		
+		<!-- iOS Safari Status Bar-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		<!--Fullscreen mobile apps --><!--
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- iOS: Mobile Safari--><!--
+		<meta name="mobile-web-app-capable" content="yes"><!-- Android: Chrome -->
+		
+		<!-- build:css -->
+		<link href="lib/css/bootstrap.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"	/>
+		<!-- endbuild -->
+	
+	</head>
+
+	<body ng-controller="PuzzleController">
+
+		<div class="ppp-masthead">
+			<div class="container">
+				<nav class="ppp-nav">
+					<a class="ppp-nav-item active" href="#">Demo</a>
+					<a class="ppp-nav-item" href="#">About</a>
+					<a class="ppp-nav-item" href="#">Etsy</a>
+					<a class="ppp-nav-item" href="#">Pinterest</a>
+					<a class="ppp-nav-item" href="#">Facebook</a>
+					<a class="ppp-nav-item" href="#">Twitter</a>
+				</nav>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class="ppp-header">
+				<h1 class="ppp-title">Lots O'Letters™</h1>
+				<h1 class="ppp-content-title">By DonnaDiddit</h1>
+				<p class="lead ppp-description">Can you resist solving this?</p>
+			</div>
+
+			<div class="row">
+
+				<div class="col-sm-8 ppp-main">
+					<div class="ppp-content">
+						
+						<select ng-model="selectedPuzzle" ng-change="onPuzzleChange()" ng-options="puzzle as puzzle.name group by puzzle.difficulty for puzzle in mergedPuzzleData">
+							<option value="">Choose A Different Puzzle</option>
+						</select>
+						
+						<br/><br/>
+						
+						<button type="button" class="btn btn-info ppp-button" ng-click="checkAnswer()">Check My Answer</button>&nbsp;
+						<button type="button" class="btn btn-warning ppp-button" ng-click="giveHint()">Give Me A Hint</button>&nbsp;
+						<button type="button" class="btn btn-danger ppp-button" ng-click="resetPuzzle()">Reset Puzzle</button><br/>
+						<button type="button" class="btn btn-default disabled ppp-button">Pins Correct: {{puzzle.correct}} / {{puzzle.letters.length}}</button>
+						
+						<ppp-hint>
+							<ppp-quotation-mark></ppp-quotation-mark>
+								<div class="pin-hint-word" ng-repeat="word in puzzle.words track by $index">
+									<ppp-hint-word index="{{$index}}">
+									<div class="pin-hint-letter" ng-repeat="letter in word track by $index">
+										<ppp-hint-letter ng-cloak>{{letter}}</ppp-hint-letter>
+									</div>
+									</ppp-hint-word>
+								</div>
+							<ppp-quotation-mark></ppp-quotation-mark>
+						</ppp-hint>
+						
+						<div data-drop="true" jqyoui-droppable class="pin-pool-area">
+							<div class="pin-pool" ng-repeat="letter in puzzle.shuffledLetters track by $index">
+								<ppp-letter ng-cloak>{{letter}}</ppp-letter>
+							</div>
+						</div>
+					</div>
+	      		</div>
+	
+	      		<div class="col-sm-3 col-sm-offset-1 ppp-sidebar">
+					<div class="sidebar-module sidebar-module-inset">
+						<h4 class="ppp-content-underline ppp-content-centered">About This Puzzle</h4>
+						<div>
+							<p><em>Quote By:</em><br/>{{puzzle.quoteBy}}</p>
+							<p><em>Source:</em><br/>{{puzzle.source}}</p>
+							<p><em>Words:</em> {{puzzle.words.length}}</p>
+							<p><em>Letters:</em> {{puzzle.letters.length}}</p>
+							<p><em>Difficulty:</em> {{puzzle.difficulty}}</p>
+							<p><a ng-href={{puzzle.purchaseLink}}>Buy This Puzzle</a></p>
+						</div>
+					</div>
+	
+					<div class="sidebar-module sidebar-module-inset-alt">
+						<h4 class="ppp-content-underline ppp-content-centered">Timer</h4>
+						<div class="timer-panel"><timer autostart="false" interval="1000" class="timer">{{minutes}} Minute{{minutesS}} {{seconds}} Second{{secondsS}}</timer><br/>
+						<button type="button" class="btn btn-default" ng-click="startTimer()" ng-disabled="timerStarted">Start</button> <button type="button" class="btn btn-default" ng-click="resumeTimer()" ng-disabled="!timerStarted || timerRunning">Resume</button> <button type="button" id="timerOff" class="btn btn-default" ng-click="stopTimer()" ng-disabled="!timerStarted && !timerRunning">Stop</button>
+						</div>
+					</div>
+	
+					<div class="sidebar-module sidebar-module-inset-alt">
+						<h4 class="ppp-content-underline ppp-content-centered">Objective</h4>
+						<p>Solve the puzzle by assembling the quote from available letters.</p>
+						<br/>
+						<h4 class="ppp-content-underline ppp-content-centered">Instructions</h4>
+						<p>Place pins by dragging and dropping the letters onto the puzzle placeholders.</p>
+						<p>Press "Check My Answer" to see how many pins are in the correct position. Correctly placed pins will be outlined in green.</p>
+						<p>Press "Give Me A Hint" to place one unplaced pin into the correct position. This will also move incorrectly placed pins back to their starting positions.</p>
+						<p>Press "Reset Puzzle" to reload the puzzle and start over.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ppp-footer">Copyright © DonnaDiddit, LLC 2015. All rights reserved.</div>
+
+<!-- build:js -->
+		<script type="text/javascript" src="lib/js/jquery.js"></script>
+	 	<script type="text/javascript" src="lib/js/jquery-ui.js"></script>
+		<script type="text/javascript" src="lib/js/angular.js"></script>
+		<script type="text/javascript" src="lib/js/angular-dragdrop.min.js"></script>
+		<script type="text/javascript" src="lib/js/moment-with-locales.min.js"></script>
+		<script type="text/javascript" src="lib/js/humanize-duration.js"></script>
+		<script type="text/javascript" src="lib/js/angular-timer.min.js"></script>
+		<script type="text/javascript" src="js/app.module.js"></script>
+		<script type="text/javascript" src="js/puzzle-data.service.js"></script>
+		<script type="text/javascript" src="js/puzzle.controller.js"></script>
+<!-- endbuild -->
+
+	</body>
+</html>
